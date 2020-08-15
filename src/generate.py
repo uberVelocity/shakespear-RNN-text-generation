@@ -51,7 +51,7 @@ def generate_text(model, start_string):
     # Low temperatures results in more predictable text.
     # Higher temperatures results in more surprising text.
     # Experiment to find the best setting.
-    temperature = 1.0
+    temperature = 1
 
     # Here batch size == 1
     model.reset_states()
@@ -72,4 +72,4 @@ def generate_text(model, start_string):
 
     return (start_string + ''.join(text_generated))
 
-print(generate_text(model, start_string=u"ROMEO: "))
+print(generate_text(model, start_string=u"J"))
